@@ -2,3 +2,8 @@ body{
     background-color: black;
     color: azure;
 }
+
+.jumbotron{
+    background-color: gray;
+    color: goldenrod;
+}
