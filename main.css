@@ -3,7 +3,7 @@ body{
     color: azure;
 }
 .container{
-    min-width: 100%;
+    min-width: 50%;
 }
 
 .jumbotron{
@@ -16,4 +16,16 @@ body{
 }
 .btn{
     background-color: rebeccapurple;
+}
+
+.card{
+    background-color: black;
+    color: azure;
+    border: 1px dashed red;
+    text-align: center;
+}
+
+.cardCon{
+    display: flex;
+    flex-flow: row wrap;
 }
