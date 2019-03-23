@@ -1,9 +1,19 @@
 body{
-    background-color: black;
+    background-color: #808080;
     color: azure;
+}
+.container{
+    min-width: 100%;
 }
 
 .jumbotron{
-    background-color: gray;
-    color: goldenrod;
+    background-color: black;
+    color: azure;
+}
+#formDiv{
+    /* startBtn cahnges this */
+    visibility: hidden;
+}
+.btn{
+    background-color: rebeccapurple;
 }

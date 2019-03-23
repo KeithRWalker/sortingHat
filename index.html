@@ -12,7 +12,7 @@
   </head>
   <body>
     <h1>Sorting Hat</h1>
-    
+<!-------------------------------JUMBOTRON----------------------------------->
     <div class="container">
         <div class="jumbotron">
             <h1 class="display-4">The Sorting Hat</h1>
@@ -22,11 +22,40 @@
                 You better hold onto your chair/broom, because things are about to get magical!
             </p>
             <hr class="my-4">
-            <p>Click the button below to get started!</p>
             <p class="lead">
-                <a class="btn btn-primary btn-lg" id="startBtn" role="button">Get Started!</a>
+                <a class="sortBtn btn btn-primary btn-lg" id="startBtn" role="button">Get Started!</a>
             </p>
+            <div id="formDiv" class="formDiv">
+                <h5>Enter student's name:</h5>
+                <form id="stForm" class="stForm">
+                  <div class="form-row">
+                      <div class="col">
+                          <input type="text" id="firstName" class="form-control" placeholder="First name">
+                      </div>
+                      <div class="col">
+                          <input type="text" id="lastName" class="form-control" placeholder="Last name">
+                      </div>
+                      <div class="col">
+                          <a class="sortBtn btn btn-primary btn-md" id="sortBtn" role="button">Sort</a>
+                      </div>
+                  </div>
+                </form>
+            </div>
         </div>
+<!-------------------------------- FORM -------------------------------------->
+      <!-- <div class="formCon">
+        <h5>Enter student's name below</h5>
+        <form id="stForm" class="stForm">
+          <div class="form-row">
+            <div class="col">
+              <input type="text" id="firstName" class="form-control" placeholder="First name">
+            </div>
+            <div class="col">
+              <input type="text" id="lastName" class="form-control" placeholder="Last name">
+            </div>
+          </div>
+        </form>
+      </div> -->
     </div>
 
 
