@@ -1,32 +1,100 @@
 body{
-    background-color: #808080;
+    color: rgb(189, 155, 251);
+    background-image: url(./imgs/bg.jpg);
+    background-attachment: fixed;
+    font-family: 'Henny Penny', cursive;
+}
+.form-control{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid rebeccapurple;
+    width: 100%;
+    text-align: center;
+}
+.sortBtn{
+    margin-top: 5px;
+    width: 100%;
+}
+.startBtn{
+    width: 25%;
+}
+.formCon{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+.form-control:focus{
+    background-color: rgba(0, 0, 0, 0.246);
     color: azure;
 }
-.container{
-    min-width: 50%;
-}
-
 .jumbotron{
-    background-color: black;
-    color: azure;
+    /* background-color: rgba(0, 0, 0, 0.692); */
+    background-image: url(./imgs/hatbg.jpg);
+    background-size: 100% 100%;
+    margin-bottom: 0%;
+    text-align: center;
 }
 #formDiv{
-    /* startBtn cahnges this */
+    /* startBtn changes this */
     visibility: hidden;
-}
-.btn{
-    background-color: rebeccapurple;
 }
 
 .card{
     background-color: black;
-    color: azure;
-    border: 1px dashed red;
     text-align: center;
-    width: 16rem;
+    width: 20%;
+    margin-top: 5%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    margin-bottom: 5%;
+    font-size: 20px;
+    padding: 1%;
 }
 
+.card img{
+    margin-right: -5%;
+    margin-left: -5.5%;
+    width: 111%;
+}
+
+a{
+    color: rgb(123, 61, 185);
+}
 .cardCon{
     display: flex;
     flex-flow: row wrap;
+    align-content: center;
 }
+
+.redC a{
+    color: red;
+    font-size: 25px;
+}
+
+.blueC a{
+    color: rgb(39, 39, 245);
+    font-size: 25px;
+}
+
+.yellowC a{
+    color: yellow;
+    font-size: 25px;
+}
+
+.greenC a{
+    color: green;
+    font-size: 25px;
+}
+
+h2, h4{
+    font-size: 30px;
+}
+
+.btn{
+    background-color: rgb(121, 68, 175);
+    color: azure;
+}
+.btn:hover{
+    background-color: rgba(121, 68, 175, 0.609);
+    box-shadow: 5px 5px rgba(121, 68, 175, 0.329);
+}
+
