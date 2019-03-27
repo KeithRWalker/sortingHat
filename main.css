@@ -23,6 +23,7 @@ body{
     color: azure;
     border: 1px dashed red;
     text-align: center;
+    width: 16rem;
 }
 
 .cardCon{
