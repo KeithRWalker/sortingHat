@@ -10,7 +10,7 @@
 ## Screenshot: 
 ![Sorting Hat Screen Shot][ss]
 
-[ss]: link.png "Screen Shot alt txt"
+[ss]: https://raw.githubusercontent.com/KeithRWalker/sortingHat/master/imgs/sortingHatScreenshot.png "Sorting Hat Screen Shot"
 
 ***
 ***
