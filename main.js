@@ -7,7 +7,8 @@ const houses = [
          Where dwell the brave at heart,<br>
          Their daring, nerve and chivalry<br>
          Set Gryffindors apart.’`,
-         moreInfo: 'https://www.pottermore.com/collection/all-about-gryffindor'
+         moreInfo: 'https://www.pottermore.com/collection/all-about-gryffindor',
+         color: 'redC'
     },
     {
         name: 'Hufflepuff',
@@ -17,7 +18,8 @@ const houses = [
         Where they are just and loyal<br>
         Those patient Hufflepuffs are true<br>
         And unafraid of toil.’`,
-        moreInfo: 'https://www.pottermore.com/collection/all-about-hufflepuff'
+        moreInfo: 'https://www.pottermore.com/collection/all-about-hufflepuff',
+        color: 'yellowC'
     },
     {
         name: 'Ravenclaw',
@@ -27,7 +29,8 @@ const houses = [
         If you’ve a ready mind<br>
         Where those of wit and learning<br>
         Will always find their kind.’`,
-        moreInfo: 'https://www.pottermore.com/collection/all-about-ravenclaw'
+        moreInfo: 'https://www.pottermore.com/collection/all-about-ravenclaw',
+        color: 'blueC'
     },
     {
         name: 'Slytherin',
@@ -37,7 +40,8 @@ const houses = [
         You’ll make your real friends<br>
         Those cunning folk use any means<br>
         To achieve their ends.’`,
-        moreInfo: 'https://www.pottermore.com/collection/all-about-slytherin'
+        moreInfo: 'https://www.pottermore.com/collection/all-about-slytherin',
+        color: 'greenC'
     }
 ];
 const studentArray = [];
@@ -66,7 +70,7 @@ const eventListeners = () => {
 const cardBuilder = (arrayToPrint) => {
     let cardString = '';
     arrayToPrint.forEach((student) =>{
-        cardString += `<div class="card" id="studentCard">
+        cardString += `<div class="card ${student.hColor}" id="studentCard">
                 <h2>${student.name}</h2>
                 <h4>${student.hName}</h4>
                 <img src="${student.hImg}" class="card-img-top" alt="...">
@@ -96,7 +100,8 @@ const sortingHat = (e) => {
         hImg: studentHouse.img,
         hMembers: studentHouse.members,
         hQ: studentHouse.q,
-        hInfo: studentHouse.moreInfo
+        hInfo: studentHouse.moreInfo,
+        hColor: studentHouse.color
     };
     studentArray.unshift(newStudent);
     studentCount++;
